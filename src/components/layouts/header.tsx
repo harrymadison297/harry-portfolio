@@ -12,7 +12,6 @@ import ThemeToggle from './theme-toggle'
 import { Link } from '../ui/link'
 import { Separator } from '../ui/separator'
 import MobileNav from './mobile-nav'
-import CommandMenu from '../ui/command-menu'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
