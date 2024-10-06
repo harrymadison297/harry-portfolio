@@ -30,15 +30,7 @@ type BaseLink = {
     {
       href: '/projects',
       text: 'Projects'
-    },
-    {
-      href: '/about',
-      text: 'About'
-    },
-    {
-      href: '/guestbook',
-      text: 'Guestbook'
-    },
+    }
   ]
   
   export const SIDEBAR_LINKS: SidebarLinks = [
