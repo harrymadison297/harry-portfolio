@@ -12,14 +12,15 @@ import { GeistMono } from 'geist/font/mono';
 import { cn } from "@/components/ultis/cn";
 import Head from "next/head";
 import Footer from "@/components/layouts/footer";
+import { icons } from "lucide-react";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -27,7 +28,32 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Harry Madison",
   description: "My personal portfolio",
-};
+  icons: {
+    icon: '/favicon/favicon.svg',
+    shortcut: '/favicon/favicon.svg',
+    apple: [
+      {
+        url: '/favicon/apple-touch-icon.png',
+        sizes: '180x180',
+        type: 'image/png'
+      }
+    ],
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        url: '/favicon/favicon-16x16.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        url: '/favicon/favicon-32x32.png'
+      }
+    ]
+  }
+}
 
 export default function RootLayout({
   children,
@@ -36,9 +62,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <link rel="icon" href="/favicon.ico" sizes='180x180'/>
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-geist-sans)] relative`}
       >

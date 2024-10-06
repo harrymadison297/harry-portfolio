@@ -28,16 +28,16 @@ type BaseLink = {
       text: 'Blog'
     },
     {
-      href: '/Guestbook',
-      text: 'Guestbook'
-    },
-    {
       href: '/projects',
       text: 'Projects'
     },
     {
       href: '/about',
       text: 'About'
+    },
+    {
+      href: '/guestbook',
+      text: 'Guestbook'
     },
   ]
   
