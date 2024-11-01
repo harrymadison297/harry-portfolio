@@ -23,7 +23,7 @@ const Footer = () => {
         ))}
       </div>
       <div className='mt-20 flex items-center justify-between text-sm'>
-        <div>&copy; {new Date().getFullYear()} Hong</div>
+        <div>&copy; {new Date().getFullYear()} Harry</div>
         <Link
           href='https://github.com/harrymadison297/harry-portfolio'
           className='flex items-center justify-center overflow-hidden rounded-md border'
