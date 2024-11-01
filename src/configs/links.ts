@@ -209,7 +209,7 @@ type BaseLink = {
           text: 'Projects'
         },
         {
-          href: 'https://links.honghong.me',
+          href: 'https://github.com/harrymadison297',
           text: 'Links'
         }
       ]
